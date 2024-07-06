@@ -1,0 +1,104 @@
+#face{
+    border:2px solid black;
+    height: 350px;
+    width: 350px;
+    background-color: pink;
+    border-radius: 100%;
+}
+#eye-container{
+    position: absolute;
+    /*border:1px solid black;*/
+    width: 250px;
+    height: 100px;
+    top: 100px;
+    left: 60px;
+}
+#left-eye, #right-eye{
+    position: absolute;
+    border: 1px solid white;
+    height:100px ;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#right-eye{
+    left: 150px;
+    transition: transform 1.5s ease-in-out;
+}
+#left-eye{
+    transition: transform 1.5s ease-in-out;
+}
+
+#left-eye::before,#right-eye::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+}
+#nose{
+    position: absolute;
+    border:1px solid black;
+    width: 150px;
+    height: 70px;
+    background-color: #e974a7;
+    top: 250px;
+    left: 107px;
+    border-radius: 30px 30px 30px 30px;
+    transition: transform 1.5s linear;
+}
+#left-nose, #right-nose{
+    position: absolute;
+    border: 1px solid black;
+    height: 50px;
+    width: 30px;
+    background-color: black;
+    left: 25px;
+    top: 8px;
+    border-radius: 50%;
+    border: 2px solid black;  
+}
+#right-nose{
+    left: 90px;
+    transition: transform 1.5s ease-in-out;
+}
+#left-nose{
+    transition: transform 1.5s ease-in-out;
+}
+#right-eye:hover{
+    transform: scale(0);
+}
+#left-eye:hover{
+    transform: scale(0);
+}
+#nose:hover{
+    transform: scale(1.5);
+}
+
+#left-ear, #right-ear{
+    position: absolute;
+    border: 1px solid pink;
+    height:96px ;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%; 
+    z-index: -1;
+}
+#right-ear{
+    left: 256px;
+    transition: transform 1.5s ease-in-out;
+}
+#left-ear{
+    transition: transform 1.5s ease-in-out;
+}
+#right-ear:hover{
+    transform: scale(1);
+}
+#left-ear:hover{
+    transform: scale(1);
+}
